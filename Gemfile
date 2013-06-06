@@ -28,6 +28,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'factory_girl_rails'
   gem 'quiet_assets'
+  gem 'faker'
 end
 
 group :test do
@@ -38,6 +39,7 @@ group :test do
   gem 'capybara-webkit'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
+  gem 'cucumber-rails', require: false
 end
 
 group :development do
