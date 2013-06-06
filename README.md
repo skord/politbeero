@@ -1,6 +1,6 @@
 # Politbeero
 
-Politnbeero is Duma for beer. Such is life. 
+Politbeero is Duma for beer. Such is life. 
 
 ## Politbeero Should
 
