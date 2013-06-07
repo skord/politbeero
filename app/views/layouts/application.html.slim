@@ -17,5 +17,6 @@ html lang="en"
     = javascript_include_tag "vendor/custom.modernizr"
     = csrf_meta_tags
   body
+    = render 'shared/navbar'
     = yield
     = javascript_include_tag "application"
