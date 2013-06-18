@@ -1,2 +1,13 @@
 @import "fontello";
 @import "foundation_and_overrides";
+
+body {
+  background: url('/assets/Hammer_and_sickle.png') no-repeat right top;
+
+}
+
+i.fontello-icon-star-empty {
+  color: #ebe400;
+}
+
+nav.top-bar li.name h1 a { color: #ebe400; }

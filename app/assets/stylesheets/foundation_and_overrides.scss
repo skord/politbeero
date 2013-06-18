@@ -28,7 +28,7 @@ $em-base: 16px !default;
 
 $default-float: left;
 
-// $body-bg: #fff;
+// $body-bg: #d5b775;
 // $body-font-color: #222;
 $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -36,7 +36,7 @@ $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 // Font-smoothing
 
-// $font-smoothing: antialiased;
+$font-smoothing: antialiased;
 
 // Text direction settings
 
@@ -137,13 +137,13 @@ $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // Heading font styles
 
 $header-font-family: MolotRegular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $header-font-weight: bold;
+$header-font-weight: normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: #222;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
-// $header-text-rendering: optimizeLegibility;
+$header-text-rendering: optimizeLegibility;
 
 // Heading font sizes
 
@@ -1202,7 +1202,7 @@ $header-font-family: MolotRegular, "Helvetica Neue", "Helvetica", Helvetica, Ari
 
 // Background color for the top bar
 
-// $topbar-bg:                            #111 !default;
+$topbar-bg:                            #aa0600 !default;
 
 // Height and margin
 
@@ -1215,8 +1215,8 @@ $header-font-family: MolotRegular, "Helvetica Neue", "Helvetica", Helvetica, Ari
 
 // Controlling the styles for the title in the top bar
 
-// $topbar-title-weight:                  bold;
-// $topbar-title-font-size:               emCalc(17px);
+$topbar-title-weight:                  normal;
+$topbar-title-font-size:               emCalc(24px);
 
 // Style the top bar dropdown elements
 
