@@ -2,8 +2,9 @@
 @import "foundation_and_overrides";
 
 body {
-  background: url('/assets/Hammer_and_sickle.png') no-repeat center 60px;
+  background: url('/assets/Hammer_and_sickle.png') no-repeat center 50%;
   background-size: 75%;
+  background-attachment: fixed;
 
 }
 
