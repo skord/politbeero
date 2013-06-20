@@ -1,0 +1,18 @@
+.beer
+  .row
+    .small-12.columns
+      h3
+        = "#{beer.brewery.name} - #{beer.name}"
+        '
+        small= "#{beer.abv}% ABV"
+  .row
+    .small-12.columns
+      p= beer.short_description
+      p= beer.description
+      = icon('fontello-icon-beer')
+      - if beer.in_stock
+        p
+          i= "Available in a #{beer.vessel}."
+      - else
+        p
+          i Out of Stock!

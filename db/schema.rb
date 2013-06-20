@@ -11,7 +11,48 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130606200546) do
+ActiveRecord::Schema.define(:version => 20130619170117) do
+
+  create_table "beers", :force => true do |t|
+    t.string   "name"
+    t.decimal  "abv"
+    t.integer  "ibu"
+    t.integer  "brewery_id"
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
+    t.string   "slug"
+    t.integer  "style_id"
+    t.boolean  "in_stock",          :default => false
+    t.string   "short_description"
+    t.text     "description"
+    t.string   "vessel"
+  end
+
+  add_index "beers", ["brewery_id"], :name => "index_beers_on_brewery_id"
+  add_index "beers", ["slug"], :name => "index_beers_on_slug", :unique => true
+  add_index "beers", ["style_id"], :name => "index_beers_on_style_id"
+
+  create_table "breweries", :force => true do |t|
+    t.string   "name"
+    t.string   "city"
+    t.string   "state"
+    t.string   "url"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.string   "slug"
+    t.string   "distribution"
+  end
+
+  add_index "breweries", ["slug"], :name => "index_breweries_on_slug", :unique => true
+
+  create_table "styles", :force => true do |t|
+    t.string   "name"
+    t.string   "slug"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "styles", ["slug"], :name => "index_styles_on_slug", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "name",                   :default => "", :null => false

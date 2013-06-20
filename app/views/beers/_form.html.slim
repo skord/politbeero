@@ -1,0 +1,12 @@
+.row
+  .small-12.columns
+    = simple_form_for(@beer, html: {class: 'custom'}) do |f|
+      = f.input :name
+      = f.input :abv
+      = f.input :ibu
+      = f.association :brewery, prompt: 'Pick a Brewery'
+      = f.association :style, prompt: 'Choose Beer Style'
+      = f.input :in_stock
+      = f.input :short_description
+      = f.input :description
+      = f.submit class: 'button'

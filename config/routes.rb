@@ -1,4 +1,11 @@
 Politbeero::Application.routes.draw do
+
+  resources :beers do
+    collection do
+      get 'current'
+    end
+  end
+
   devise_for :users
 
   get "welcome/index"

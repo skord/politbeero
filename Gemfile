@@ -54,6 +54,7 @@ end
 gem 'foreman'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+gem 'friendly_id'
 
 # temp stuff for converting erb to slim
 # gem 'html2haml'
