@@ -5,10 +5,10 @@ class BeersController < ApplicationController
 
   def current
     @beers = Beer.current
-    render :index
   end
 
   def show
+    @beer = Beer.find(params[:id])
   end
 
   def new
